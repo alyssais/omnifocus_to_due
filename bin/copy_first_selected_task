@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require_relative "../lib/omnifocus_to_due"
+
+include OmnifocusToDue
+
+task = Omnifocus.selected_tasks.first
+Due.add_task(task, source_name: "Omnifocus", source_url: "omnifocus://")

@@ -1,5 +1,6 @@
-require "omnifocus_to_due/version"
-
-module OmnifocusToDue
-  # Your code goes here...
-end
+require_relative "omnifocus_to_due/version"
+require_relative "omnifocus_to_due/due"
+require_relative "omnifocus_to_due/finder"
+require_relative "omnifocus_to_due/omnifocus"
+require_relative "omnifocus_to_due/repetition_rule"
+require_relative "omnifocus_to_due/task"
