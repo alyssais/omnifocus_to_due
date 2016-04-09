@@ -15,7 +15,7 @@ module OmnifocusToDue
         params.merge!(
           recurunit: unit(repeat),
           recurfreq: repeat.interval,
-          recurbyday: adjsuted_days(repeat.days),
+          recurbyday: adjusted_days(repeat.days),
         )
 
         params[:repeatfromdate] = task.due_date if repeat.fixed?
@@ -46,7 +46,7 @@ module OmnifocusToDue
       end
     end
 
-    def adjsuted_days(days)
+    def adjusted_days(days)
       days.map { |d| (d + 1) % 7 } if days
     end
   end
