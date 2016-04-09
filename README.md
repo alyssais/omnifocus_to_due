@@ -8,7 +8,7 @@ Once it's installed, "Add OmniFocus Task to Due" will appear in your the menu ba
 
 You need to have Ruby 2.3 installed at `~/.rubies/ruby-2.3.0/bin/ruby`.
 I'll be trying to make this work better out of the box in future.
-There's an [issue](https://github.com/alyssais/omnifocus_to_due/issue/1) open for this if you want to help out.
+There's an [issue](https://github.com/alyssais/omnifocus_to_due/issues/1) open for this if you want to help out.
 
 Run these commands in Terminal. You need to have [Bundler](http://bundler.io) installed.
 
