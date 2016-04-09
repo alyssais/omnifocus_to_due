@@ -1,28 +1,36 @@
-# OmnifocusToDue
+# OmniFocus To Due
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/omnifocus_to_due`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is an OS X service that implements exporting [OmniFocus](https://omnigroup.com/omnifocus) tasks to [Due](http://www.dueapp.com). Unlike the generic "Add to Due" service that Due comes with, this service will copy across due dates and repeat schedules in addition to the name of the task.
 
-TODO: Delete this and the text above, and describe your gem
+Once it's installed, "Add OmniFocus Task to Due" will appear in your the menu bar and right-click menus within OmniFocus.
 
-## Installation
+## Installing
 
-Add this line to your application's Gemfile:
+You need to have Ruby 2.3 installed at `~/.rubies/ruby-2.3.0/bin/ruby`.
+I'll be trying to make this work better out of the box in future.
+There's an [issue](https://github.com/alyssais/omnifocus_to_due/issue/1) open for this if you want to help out.
 
-```ruby
-gem 'omnifocus_to_due'
+Run these commands in Terminal. You need to have [Bundler](http://bundler.io) installed.
+
+```sh
+git clone https://github.com/alyssais/omnifocus_to_due
+cd omnifocus_to_due
+bundle install
+ln -s lib/omnifocus_to_due.wflow "~/Library/Scripts/Add OmniFocus Task to Due.wflow"
 ```
 
-And then execute:
+Make sure not to delete the `omnifocus_to_due` directory.
+If you move it, you'll have to recreate the symbolic link.
 
-    $ bundle
+You can [assign a custom keyboard shortcut](https://support.apple.com/kb/PH18418?locale=en_US) to the service in System Preferences.
 
-Or install it yourself as:
+## Uninstalling
 
-    $ gem install omnifocus_to_due
+Run this command in Terminal.
 
-## Usage
-
-TODO: Write usage instructions here
+```sh
+rm "~/Library/Scripts/Add OmniFocus Task to Due.wflow"
+```
 
 ## Development
 
@@ -32,10 +40,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/omnifocus_to_due. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/omnifocus_to_due. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](CODE_OF_CONDUCT.md).
