@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/Users/alyssais/.rubies/ruby-2.3.0/bin/ruby /Users/alyssais/code/omnifocus_to_due/bin/copy_first_selected_task</string>
+					<string>$HOME/.rubies/ruby-2.3.0/bin/ruby /Users/alyssais/code/omnifocus_to_due/bin/copy_first_selected_task</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
