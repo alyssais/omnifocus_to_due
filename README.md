@@ -16,7 +16,7 @@ Run these commands in Terminal. You need to have [Bundler](http://bundler.io) in
 git clone https://github.com/alyssais/omnifocus_to_due
 cd omnifocus_to_due
 bundle install
-ln -s lib/omnifocus_to_due.wflow "~/Library/Scripts/Add OmniFocus Task to Due.wflow"
+ln -s lib/omnifocus_to_due.workflow "~/Library/Scripts/Add OmniFocus Task to Due.workflow"
 ```
 
 Make sure not to delete the `omnifocus_to_due` directory.
@@ -29,7 +29,7 @@ You can [assign a custom keyboard shortcut](https://support.apple.com/kb/PH18418
 Run this command in Terminal.
 
 ```sh
-rm "~/Library/Scripts/Add OmniFocus Task to Due.wflow"
+rm "~/Library/Scripts/Add OmniFocus Task to Due.workflow"
 ```
 
 ## Development
